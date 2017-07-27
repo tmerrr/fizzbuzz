@@ -10,8 +10,7 @@ def fizz_buzz start_num, end_num
 
 	while num <= end_num 
 		str_num = num.to_s
-		arr = str_num.split(//)
-		if arr.include?('3')
+		if str_num.include?('3')
 			puts 'lucky'
 			lucky_count = lucky_count + 1
 		else
